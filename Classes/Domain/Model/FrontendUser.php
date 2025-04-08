@@ -305,7 +305,7 @@ class FrontendUser extends AbstractEntity implements FrontendUserInterface, Vali
             $result = $this->dateOfBirth->format('j');
         }
 
-        return $result;
+        return (int)$result;
     }
 
     public function setDateOfBirthMonth(int $month): void
@@ -322,7 +322,7 @@ class FrontendUser extends AbstractEntity implements FrontendUserInterface, Vali
             $result = $this->dateOfBirth->format('n');
         }
 
-        return $result;
+        return (int)$result;
     }
 
     public function setDateOfBirthYear(int $year): void
@@ -339,7 +339,7 @@ class FrontendUser extends AbstractEntity implements FrontendUserInterface, Vali
             $result = $this->dateOfBirth->format('Y');
         }
 
-        return $result;
+        return (int)$result;
     }
 
     public function setTimezone(float $timezone): void
